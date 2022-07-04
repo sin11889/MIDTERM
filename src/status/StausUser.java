@@ -9,8 +9,12 @@ package status;
  * MidTerm-Exam
  * @author srinivsi
  */
+
 public class StausUser 
 {
+     public enum Code {ZERO,ONE,TWO,THREE};
+     private String code;
+      
    public void statusDetail(String code)
 {
 switch(code.toUpperCase())
@@ -30,5 +34,19 @@ switch(code.toUpperCase())
         break;
         }
 }
+
+    /**
+     * @return the code
+     */
+    public String getCode() {
+        return code;
+    }
+
+    /**
+     * @param code the code to set
+     */
+    public void setCode(String code) {
+        this.code = code;
+    }
  
 }
